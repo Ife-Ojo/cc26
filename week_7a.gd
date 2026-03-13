@@ -25,14 +25,14 @@ func _input(event: InputEvent) -> void:
 	
 		var note = (r * size) + c
 		if note != last_note:
-			if major:
+			if minor:
 				play_note(note, 2, 0)
 				play_note(note + 3, 2, 0)
-				play_note(note + 5, 2, 0)
+				play_note(note + 7, 2, 0)
 			else:
 				play_note(note, 2, 0)
 				play_note(note + 4, 2, 0)
-				play_note(note + 6, 2, 0)
+				play_note(note + 7, 2, 0)
 			last_note = note
 
 func _ready() -> void:
@@ -86,8 +86,8 @@ func _draw() -> void:
 			,0,18, Color.WHITE)
 	pass
 
-var major = false
+var minor = false
 
 func _on_check_box_toggled(toggled_on: bool) -> void:
-	major = toggled_on
+	minor = toggled_on
 	pass # Replace with function body.

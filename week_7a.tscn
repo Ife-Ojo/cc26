@@ -12,9 +12,16 @@ font = ExtResource("2_4eyg7")
 soundfont = "res://assets/Aspirin-Stereo.sf2"
 
 [node name="CheckBox" type="CheckBox" parent="." unique_id=1075362171]
-offset_left = 93.0
-offset_top = 86.0
-offset_right = 129.0
-offset_bottom = 122.0
+offset_left = 192.0
+offset_top = 57.0
+offset_right = 228.0
+offset_bottom = 93.0
+
+[node name="Label" type="Label" parent="." unique_id=125135443]
+offset_left = 29.0
+offset_top = 63.0
+offset_right = 173.0
+offset_bottom = 87.0
+text = "Major/Minor"
 
 [connection signal="toggled" from="CheckBox" to="." method="_on_check_box_toggled"]
