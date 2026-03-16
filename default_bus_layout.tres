@@ -1,13 +1,11 @@
 [gd_resource type="AudioBusLayout" format=3 uid="uid://dagd64meev52d"]
 
-[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_j3pel"]
-resource_name = "Delay"
-
 [sub_resource type="AudioEffectReverb" id="AudioEffectReverb_j3pel"]
 resource_name = "Reverb"
+room_size = 1.0
+damping = 1.0
+hipass = 0.9
 
 [resource]
-bus/0/effect/0/effect = SubResource("AudioEffectDelay_j3pel")
+bus/0/effect/0/effect = SubResource("AudioEffectReverb_j3pel")
 bus/0/effect/0/enabled = true
-bus/0/effect/1/effect = SubResource("AudioEffectReverb_j3pel")
-bus/0/effect/1/enabled = true

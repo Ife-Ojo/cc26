@@ -10,7 +10,17 @@ func change_instrument(channel, instrument):
 	midi_event.message = MIDI_MESSAGE_PROGRAM_CHANGE
 	midi_event.instrument = instrument
 	$MidiPlayer.receive_raw_midi_message(midi_event)
-	
+
+func play_chord(note, minor, duration):
+	if minor:
+		play_note(note, 2, 0)
+		play_note(note + 3, 2, 0)				
+		play_note(note + 7, 2, 0)
+	else:
+		play_note(note, 2, 0)
+		play_note(note + 4, 2, 0)
+		play_note(note + 7, 2, 0)
+			
 
 var last_note = -1
 func _input(event: InputEvent) -> void:
@@ -24,16 +34,25 @@ func _input(event: InputEvent) -> void:
 		var c:int = remap(event.position.x, 0, vs.x, 0, size)
 	
 		var note = (r * size) + c
-		if note != last_note:
-			if minor:
-				play_note(note, 2, 0)
-				play_note(note + 3, 2, 0)
-				play_note(note + 7, 2, 0)
-			else:
-				play_note(note, 2, 0)
-				play_note(note + 4, 2, 0)
-				play_note(note + 7, 2, 0)
+		if note != last_note:			
+			print("Playing note" + str(note) + "last note: " + str(last_note))
 			last_note = note
+			if minor:
+				play_chord(note, minor, 2)
+				await get_tree().create_timer(0.5).timeout
+				play_chord(note + 3, minor, 2)
+				await get_tree().create_timer(0.5).timeout
+				play_chord(note + 7, minor, 2)
+				await get_tree().create_timer(0.5).timeout				
+			else:
+				play_chord(note, minor, 2)
+				await get_tree().create_timer(0.5).timeout
+				play_chord(note + 4, minor, 2)
+				await get_tree().create_timer(0.5).timeout
+				play_chord(note + 7, minor, 2)
+				await get_tree().create_timer(0.5).timeout				
+		
+			
 
 func _ready() -> void:
 	
