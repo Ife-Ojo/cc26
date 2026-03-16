@@ -61,7 +61,7 @@ func _ready() -> void:
 	var sum = 0
 	for i in range(17):
 		sum += x
-	change_instrument(0, 25)
+	change_instrument(0, 80)
 	print(sum)
 	OS.open_midi_inputs()
 	
