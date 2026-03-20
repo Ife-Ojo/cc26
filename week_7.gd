@@ -1,5 +1,5 @@
 extends Node2D
-
+# Hello from Adam
 func change_instrument(channel, instrument):
 	var midi_event = InputEventMIDI.new()
 	midi_event.channel = 0
