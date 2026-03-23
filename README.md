@@ -52,9 +52,16 @@ Greetings fellow octopus
 
 You can focus on creating a repository for your assignment
 
+Submit the urls to repositories you create today on Brightspace.
 
+If you misssed last weeks class do this:
 
-Submit the urls to repositories you create today on Brightspace.  
+- Read the first 3 chapters of the [git manual](https://git-scm.com/docs/user-manual.html) - Up as far as Exploring git history is enough. 
+- Use the [git reference](https://github.com/skooter500/csresources/blob/main/git_ref.pdf)
+- Try this [step-by-step lab](https://github.com/skooter500/csresources/blob/main/gitlab.md). It is for Java, but you can adapt it. 
+- Install git for Windows on your laptop. Mac users, it's alreading installed. Use from terminal.
+
+![Screenshot of project](images/aistudent1.jpg)
 
 ## Week 8
 
