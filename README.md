@@ -21,6 +21,41 @@ Greetings fellow octopus
 - [GDScript Tutorial](https://www.youtube.com/watch?v=e1zJS31tr88)
 - [5 Games Made in Godot to inspire you each week](https://www.youtube.com/@stayathomedev) 
 
+
+## Week 9
+
+## Lab - Use git from the shell
+
+### Part 1
+
+- Create a NEW git  with a new Godot project in it. 
+- Put it on github
+- Make edits to the local files
+- Commit and push them
+- Add files to the project and commit the changes 
+- Create a new branch
+- Make changes on the branch and commit
+- Merge the branch with main
+- Push to github
+
+### Part 2
+
+- Star THIS repo
+- Fork THIS repo
+- Clone the fork
+- Configure the remotes 
+- Create a new branch
+- Make some changes
+- Commit
+- Merge with main
+- Push
+
+You can focus on creating a repository for your assignment
+
+
+
+Submit the urls to repositories you create today on Brightspace.  
+
 ## Week 8
 
 ## Lab - Random Walk
