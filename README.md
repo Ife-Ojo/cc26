@@ -52,6 +52,23 @@ Greetings fellow octopus
 - Merge with main
 - Push
 
+# Week 9 Git Lab
+
+## Part 1
+- Created a new Godot project and git repo
+- Pushed to GitHub
+- Made edits, committed and pushed
+- Created and merged a branch
+
+## Part 2
+- Starred and forked the cc26 repo
+- Cloned and configured remotes
+- Created a branch, made changes, merged and pushed
+
+## Repository URLs
+- Part 1: https://github.com/Ife-Ojo/week9-git-lab
+- Part 2: https://github.com/Ife-Ojo/cc26
+
 You can focus on creating a repository for your assignment
 
 THis is what your assignment [README.MD](https://github.com/skooter500/csresources/blob/main/assignment/README.md) file should look like
